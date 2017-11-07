@@ -1,0 +1,45 @@
+.card-image {
+    float: left;
+    width: 17%;
+    height: 135px;
+  }
+  .card-image img {
+    height: 75%;
+    border: solid 3px #1da1f2;
+    border-radius: 10px;
+  }
+  .right-content {
+    float: left;
+    width: 70%;
+  }
+  .card-title {
+    color: #1da1f2;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  .card-modify{
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #1da1f2;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+
+  .card-action{
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+  }
+
+  h2{
+    text-align: center;
+    font-weight: bolder;
+    color: #1da1f2;
+    margin-top: 10px;
+  }
+
+  .log-out-btn{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+  }

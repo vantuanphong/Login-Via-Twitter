@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="col-md-12"> 
+  <h2>User TimeLine</h2> <button class="btn btn-primary btn-xs log-out-btn" (click)='logout()'>Log out</button>
+  <hr>
+  <div class="row">     
+      <div *ngFor="let item of tweetsdata" class="col-md-8 offset-2">
+        <div class="card-modify">
+          <div class="card-image">
+            <img style={width:10px,height:10px;} src={{item.user.profile_image_url}}>
+          </div>
+          <div class="right-content">
+            <span class="card-title">{{item.user.name}}</span>
+            <div class="card-content">
+              <p>{{item.text}}</p>
+            </div>
+            <div class="card-action">
+                <a class="btn btn-primary btn-xs" href="https://twitter.com/intent/retweet?tweet_id={{item.id_str}}" >Retweet</a>
+                <a class="btn btn-primary btn-xs" href="https://twitter.com/intent/follow?screen_name={{item.user.screen_name}}">Follow</a>
+            </div>
+          </div>
+        </div>
+      </div>  
+  </div></div> 
+</div>
